@@ -479,3 +479,607 @@ Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
 
 <h1>NOT FOUND</h1>
 19:10:01 ------------------------http响应结束------------------------
+17:11:38 完整请求 ->  GET / HTTP/1.1
+Host: 127.0.0.1:3000
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+17:11:38 ------------------------请求结束------------------------
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 path and query / {} 
+17:11:38 执行重定向函数redirect......
+17:11:38 获取重定向的header......
+17:11:38 重定向的header ->  HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /todo/index
+
+
+17:11:38 http响应 ->
+ HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /todo/index
+
+
+17:11:38 ------------------------http响应结束------------------------
+17:11:38 完整请求 ->  GET /todo/index HTTP/1.1
+Host: 127.0.0.1:3000
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+17:11:38 ------------------------请求结束------------------------
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 path and query /todo/index {} 
+17:11:38 http响应 ->
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web todo ajax</title>
+        <style>
+        .comment-list {
+            background: #1cc2ff;
+            width: 30%;
+        }
+        </style>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+
+17:11:38 ------------------------http响应结束------------------------
+17:11:38 完整请求 ->  GET /static?file=gua.js HTTP/1.1
+Host: 127.0.0.1:3000
+Accept: */*
+Connection: keep-alive
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Accept-Language: zh-cn
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate
+
+
+17:11:38 完整请求 ->  GET /static?file=todo.js HTTP/1.1
+Host: 127.0.0.1:3000
+Accept: */*
+Connection: keep-alive
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Accept-Language: zh-cn
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate
+
+
+17:11:38 ------------------------请求结束------------------------
+17:11:38 ------------------------请求结束------------------------
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 path and query /static {'file': 'gua.js'} 
+17:11:38 path and query /static {'file': 'todo.js'} 
+17:11:38 http响应 ->
+ HTTP/1.1 200 OK
+
+var timeString = function(timestamp) {
+    t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+var commentsTemplate = function(comments) {
+    var html = ''
+    for(var i = 0; i < comments.length; i++) {
+        var c = comments[i]
+        var t = `
+            <div>
+                ${c.content}
+            </div>
+        `
+        html += t
+    }
+    return html
+}
+
+var todoTemplate = function(todo) {
+    var title = todo.title
+    var id = todo.id
+    var comment = commentsTemplate(todo.comments)
+    var ut = timeString(todo.ut)
+    // data-xx 是自定义标签属性的语法
+    // 通过这样的方式可以给任意标签添加任意属性
+    // 假设 d 是 这个 div 的引用
+    // 这样的自定义属性通过  d.dataset.xx 来获取
+    // 在这个例子里面, 是 d.dataset.id
+    var t = `
+        <div class="todo-cell" id='todo-${id}' data-id="${id}">
+            <span class='todo-title'>${title}</span>
+            <time class='todo-ut'>${ut}</time>
+            <button class="todo-edit">编辑</button>
+            <button class="todo-delete">删除</button>
+            <div class="comment-list">
+                评论：
+                ${comment}
+            </div>
+            <div class="comment-form">
+                <input type="hidden" name="todo_id" value="">
+                <input id='comment-input' name="content">
+                <br>
+                <button id="comment-add-button">添加评论</button>
+            </div>
+        </div>
+    `
+    return t
+    /*
+    上面的写法在 python 中是这样的
+    t = """
+    <div class="todo-cell">
+        <button class="todo-delete">删除</button>
+        <span>{}</span>
+    </div>
+    """.format(todo)
+    */
+}
+
+var insertTodo = function(todo) {
+    //
+    var todoCell = todoTemplate(todo)
+    // 插入 todo-list
+    var todoList = e('.todo-list')
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+var insertEditForm = function(cell) {
+    var form = `
+        <div class='todo-edit-form'>
+            <input class="todo-edit-input">
+            <button class='todo-update'>更新</button>
+        </div>
+    `
+    cell.insertAdjacentHTML('beforeend', form)
+}
+
+var loadTodos = function() {
+    // 调用 ajax api 来载入数据
+    apiTodoAll(function(r) {
+        // console.log('load all', r)
+        // 解析为 数组
+        var todos = JSON.parse(r)
+        // 循环添加到页面中
+        for(var i = 0; i < todos.length; i++) {
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function() {
+    //通过函数 e 抓取到 <button id='id-button-add'>add</button> 中的 id-button-add
+    var b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        ////通过函数 e 抓取到 <input id='id-input-todo'> 中的 id-input-todo
+        var input = e('#id-input-todo')
+        //拿到input框中用户输入的数据字段
+        var title = input.value
+        //打印出用户输入的数据字段
+        log('click add', title)
+        //设置form表单
+        var form = {
+            'title': title,
+        }
+        //调用 apiTodoAdd 函数异步加载数据
+        apiTodoAdd(form, function(r) {
+            log('form 表单 ', form)
+            // 收到返回的数据, 插入到页面中
+            var todo = JSON.parse(r)
+            log('todo ', todo)
+            log('todo的用户id ', todo.user_id)
+            insertTodo(todo)
+            // if (todo.user_id > -1){
+            //     //调用 insertTodo 函数插入todo数据
+            //     insertTodo(todo)
+            // }
+            // else {
+            //     window.location.href="http://localhost:3000/login"
+            // }
+
+        })
+    })
+}
+
+var bindEventTodoDelete = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            var todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEventTodoEdit = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+var bindEventTodoUpdate = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            var editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            var input = editForm.querySelector('.todo-edit-input')
+            var title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            var todoCell = self.closest('.todo-cell')
+            var todo_id = todoCell.dataset.id
+            var form = {
+                'id': todo_id,
+                'title': title,
+            }
+            log('form', form)
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                var todo = JSON.parse(r)
+                var selector = '#todo-' + todo.id
+                log('selector', selector)
+                var todoCell = e(selector)
+                log('todoCell', todoCell)
+                var titleSpan = todoCell.querySelector('.todo-title')
+                log('titleSpan', titleSpan)
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+
+var bindEvents = function() {
+    //增加一条todo
+    bindEventTodoAdd()
+    //删除一条todo
+    bindEventTodoDelete()
+    //编辑一条tudo
+    bindEventTodoEdit()
+    //更新一条todo
+    bindEventTodoUpdate()
+}
+
+
+var __main = function() {
+    //绑定事件的函数
+    bindEvents()
+    //加载todo数据的函数
+    loadTodos()
+}
+
+
+//函数主入口
+__main()
+17:11:38 ------------------------http响应结束------------------------
+17:11:38 http响应 ->
+ HTTP/1.1 200 OK
+
+var log = function() {
+    console.log.apply(console, arguments)
+}
+
+var e = function(sel) {
+    return document.querySelector(sel)
+}
+
+/*
+ ajax 函数
+*/
+var ajax = function(method, path, data, responseCallback) {
+    var r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// TODO API
+// 获取所有 todo
+var apiTodoAll = function(callback) {
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiTodoAdd = function(form, callback) {
+    //添加 todo 的路由 path 是 /api/todo/add 对应的路由函数是 add
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+var apiTodoDelete = function(id, callback) {
+    var path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+var apiTodoUpdate = function(form, callback) {
+    var path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+
+
+
+17:11:38 ------------------------http响应结束------------------------
+17:11:38 完整请求 ->  GET /api/todo/all HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+
+
+17:11:38 ------------------------请求结束------------------------
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 path and query /api/todo/all {} 
+17:11:38 kwargs,  {'todo_id': 1} <class 'dict'>
+17:11:38 kwargs,  {'todo_id': 2} <class 'dict'>
+17:11:38 http响应 ->
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "测试",
+    "user_id": -1,
+    "completed": false,
+    "ct": 1513408750,
+    "ut": 1513409109,
+    "comments": [
+      {
+        "id": 1,
+        "user_id": 2,
+        "content": "楼主说得对",
+        "todo_id": 1,
+        "weibo_id": 1
+      },
+      {
+        "id": 2,
+        "user_id": 1,
+        "content": "lbvu is right",
+        "todo_id": 1,
+        "weibo_id": 1
+      },
+      {
+        "id": 5,
+        "user_id": 1,
+        "content": "asdf",
+        "todo_id": 1,
+        "weibo_id": 2
+      },
+      {
+        "id": 6,
+        "user_id": 1,
+        "content": "123",
+        "todo_id": 1,
+        "weibo_id": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "饿",
+    "user_id": -1,
+    "completed": false,
+    "ct": 1513409681,
+    "ut": 1513409681,
+    "comments": [
+      {
+        "id": 3,
+        "user_id": 1,
+        "content": "hello",
+        "todo_id": 2,
+        "weibo_id": 2
+      }
+    ]
+  }
+]
+17:11:38 ------------------------http响应结束------------------------
+17:11:38 完整请求 ->  GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:3000
+Accept: */*
+Connection: keep-alive
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Accept-Language: zh-cn
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Encoding: gzip, deflate
+
+
+17:11:38 ------------------------请求结束------------------------
+17:11:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:38 path and query /favicon.ico {} 
+17:11:38 http响应 ->
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+17:11:38 ------------------------http响应结束------------------------
+17:11:42 完整请求 ->  POST /api/todo/add HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+Origin: http://127.0.0.1:3000
+Accept-Encoding: gzip, deflate
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Referer: http://127.0.0.1:3000/todo/index
+Content-Length: 21
+Accept-Language: zh-cn
+
+
+17:11:42 ------------------------请求结束------------------------
+17:11:42 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:42 path and query /api/todo/add {} 
+17:11:42 kwargs,  {'id': -1} <class 'dict'>
+17:11:42 add微博的用户以及id  None -1
+17:11:48 完整请求 ->  POST /api/todo/add HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+Origin: http://127.0.0.1:3000
+Accept-Encoding: gzip, deflate
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Referer: http://127.0.0.1:3000/todo/index
+Content-Length: 21
+Accept-Language: zh-cn
+
+
+17:11:48 ------------------------请求结束------------------------
+17:11:48 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:11:48 path and query /api/todo/add {} 
+17:11:48 kwargs,  {'id': -1} <class 'dict'>
+17:11:48 add微博的用户以及id  None -1
+17:12:34 完整请求 ->  GET /api/todo/delete?id=2 HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Referer: http://127.0.0.1:3000/todo/index
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+
+
+17:12:34 ------------------------请求结束------------------------
+17:12:34 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:12:34 path and query /api/todo/delete {'id': '2'} 
+17:12:34 kwargs,  {'todo_id': 2} <class 'dict'>
+17:12:34 http响应 ->
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "饿",
+  "user_id": -1,
+  "completed": false,
+  "ct": 1513409681,
+  "ut": 1513409681,
+  "comments": [
+    {
+      "id": 3,
+      "user_id": 1,
+      "content": "hello",
+      "todo_id": 2,
+      "weibo_id": 2
+    }
+  ]
+}
+17:12:34 ------------------------http响应结束------------------------
+17:12:38 完整请求 ->  POST /api/todo/add HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+Origin: http://127.0.0.1:3000
+Accept-Encoding: gzip, deflate
+Cookie: session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A; csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t; _ga=GA1.1.1497041685.1508643210; Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5
+Referer: http://127.0.0.1:3000/todo/index
+Content-Length: 21
+Accept-Language: zh-cn
+
+{"title":"大声点"}
+17:12:38 ------------------------请求结束------------------------
+17:12:38 cookie ['session=eyJuYW1lIjoiXHU1NDc1XHU1NDc1XHU1NGQyIn0.DSzdIw.CQ57PjtMLRfkHQw2MHP8rOwQM6A', 'csrftoken=J2S3JTN1uQRNJg9CNHoc61KG7wFiGFrbsOz9TW6dBIXRW0FxMTJButivo8Nc8m0t', '_ga=GA1.1.1497041685.1508643210', 'Hm_lvt_40e8d3233d2e7f2696cdcce5c70c60c5=1506695194,1506739926,1506780364,1508387026']
+17:12:38 path and query /api/todo/add {} {"title":"大声点"}
+17:12:38 kwargs,  {'id': -1} <class 'dict'>
+17:12:38 add微博的用户以及id  None -1
+17:12:38 add微博的form表单  {'title': '大声点', 'user_id': -1}
+17:12:38 kwargs,  {'todo_id': 2} <class 'dict'>
+17:12:38 http响应 ->
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "大声点",
+  "user_id": -1,
+  "completed": false,
+  "ct": 1514884358,
+  "ut": 1514884358,
+  "comments": [
+    {
+      "id": 3,
+      "user_id": 1,
+      "content": "hello",
+      "todo_id": 2,
+      "weibo_id": 2
+    }
+  ]
+}
+17:12:38 ------------------------http响应结束------------------------
