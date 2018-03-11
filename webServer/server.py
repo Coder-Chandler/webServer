@@ -121,12 +121,15 @@ def process_request(connection):
     r = r.decode('utf-8')
     log('完整请求 -> ', r)
     log('------------------------请求结束------------------------')
+    print('完整请求 -> ', r)
+    print('------------------------请求结束------------------------')
     # log('ip and request, {}\n{}'.format(address, r))
     # 因为 chrome 会发送空请求导致 split 得到空 list
     # 所以这里判断一下防止程序崩溃
     if len(r.split()) < 2:
         connection.close()
     # 从浏览器的请求数据中获取请求路径（比如，'/' '/index/xxxx'
+    print(r.split())
     path = r.split()[1]
     # 创建一个新的 request 并设置
     request = Request()
@@ -178,7 +181,16 @@ if __name__ == '__main__':
         host='',
         port=3000,
     )
-    # 如果不了解 **kwargs 的用法, 上过基础课的请复习函数, 新同学自行搜索
+    """
+    解释：**config
+    **config的知识来自（**kwargs，*args）就是所说的关键字参数和被关键字参数，程序说明
+    def log(*args, **kwargs):
+        print('args',args)
+        print('kwargs',kwargs)
+    log(1,2,3,4) ---> args:(1,2,3,4), kwargs:{}
+    log(1,[1,2], c=1) ---> args:(1,[1,2]), kwargs:{'c':4}
+    这里的run(**config)，上面函数是run(host='', port=3000)那么也就是指{'host':'', 'port':3000}
+    """
     run(**config)
 
 """
